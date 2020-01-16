@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+li{
+  list-style: none;
+}
+.service{
+  margin: 0 15%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.guarantee{
+  width: 31%;
+  margin: 1%;
+}
+.guarantee img{
+  width: 45%;
+  height: 25%;
+}
+.counter{
+  margin-bottom: 30px;
+}
