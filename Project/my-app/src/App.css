@@ -1,0 +1,66 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  margin: 1em 0;
+}
+.city_list{
+  list-style: none;
+  width: 50%;
+  margin: 0 25%;
+}
+.city_info{
+  border: 1px solid black;
+  margin: 2em 0;
+  padding: 0 1em;
+}
+.main_weather{
+  margin-top: 1em;
+}
+.description{
+  margin-top: 0;
+}
+.location{
+  margin-bottom: 1em;
+}
+.form{
+  margin-left: 25%;
+  width: 50%;
+}
+.form input{
+  width: 70%;
+  margin-right: 3.8%;
+  padding: 5px 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #555;
+  background-image: url('https://img.icons8.com/ios/50/000000/search--v1.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position:5px 5px ;
+  font-size: larger;
+}
+.form button{
+  outline: none;
+  border-radius: 10px;
+  font-size: larger;
+  padding: 5px;
+  width: 25%;
+}
+.insert-name, .loading{
+  text-align: center;
+  margin-top: 2em;
+  color: #888;
+}
+.warning{
+  text-align: center;
+  margin-top: 2em;
+  color: red;
+}
+.remove-btn{
+  float: right;
+}
