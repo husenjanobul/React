@@ -5,22 +5,23 @@ import FriendProfile from './FriendProfile'
 
 function Friend() {
     const [friend, setFriend] = useState({})
-    const [isLoading, setLoading] = useState(' ')
+    const [isLoading, setLoading] = useState(false)
     const [error, setError] = useState(false)
 
-    const getFriend = () => {
+    const getFriend = async () => {
         setLoading('Loading')
-        fetch('https://www.randomuser.me/api?results=1')
-            .then(res => res.json())
-            .then(data => {
-                setFriend(data.results[0])
-                setLoading('done')
-            })
-            .catch(err => {
-                console.log(err)
-                setError(true)
-                setLoading(' ')
-            })
+        try {
+            const res = await fetch('https://www.randomuser.me/api?results=1')
+            const data = await res.json()
+            setFriend(data.results[0])
+            setLoading('done')
+        }
+        catch(err){
+            console.log(err)
+            setError(true)
+            setLoading(' ')
+        }
+
     }
 
     return (

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Button({getData}) {
+function Button({ getData }) {
     return (
         <div>
-            <button onClick={()=> getData()} >Get a friend</button>
+            <button onClick={getData} >Get a friend</button>
         </div>
     )
 }
