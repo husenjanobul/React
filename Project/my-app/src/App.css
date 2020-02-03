@@ -64,3 +64,25 @@
 .remove-btn{
   float: right;
 }
+.info_chart{
+  width: 70%;
+  height: 20em;
+  margin: 50px auto;
+}
+.info_chart h3,h1{
+  text-align: center;
+  margin: 30px;
+  color: rgb(37, 6, 122);
+}
+.info_chart h1{
+  text-decoration: underline;
+}
+.back_btn{
+  padding: 5px;
+  border-radius: 12px;
+  background: rgb(28, 8, 85);
+  color: azure;
+  border: none;
+  margin: 25px;
+  cursor: pointer;
+}
